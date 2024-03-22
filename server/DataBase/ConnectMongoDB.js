@@ -3,14 +3,11 @@ require("dotenv").config()
 
 async function connectMongoDB() {
     try {
-        mongoose.set('strictQuery', false);
-        await mongoose.connect(process.env.MongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+        await mongoose.connect(process.env.MongoURI)
         console.log("Connected to MongoDB🚀")
     }
     catch {
-        (err => {
-            console.log("Connection to MongoDB Failed😵", err)
-        })
+        (err => console.log("Connection to MongoDB Failed😵", err))
     }
 }
 
