@@ -23,3 +23,18 @@ connectMongoDB().then(()=>{
 app.get('/', (req, res) => {
     res.send("Welcome to U-Serve API")
 })
+
+const userRoutes = require('./routes/userRoutes');
+app.use('/api', userRoutes);
+
+const badgeRoutes = require('./routes/badgeRoutes');
+app.use('/api', badgeRoutes);
+
+const eventRoutes = require('./routes/eventRoutes');
+app.use('/api', eventRoutes);
+
+const volunteerHoursRoutes = require('./routes/volunteerHoursRoutes');
+app.use('/api', volunteerHoursRoutes);
+
+const volunteerOpportunityRoutes = require('./routes/opportunityRoutes');
+app.use('/api', volunteerOpportunityRoutes);
