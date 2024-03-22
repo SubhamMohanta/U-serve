@@ -23,6 +23,9 @@ U-Serve is built using the following technologies:
 - **Authentication**: Auth0
 - **Deployment**: Vercel
 
+## Figma design
+[Link](https://www.figma.com/file/hrTZdsiHvSFPE6G3jfFl4B/U-serve?type=design&node-id=0%3A1&mode=design&t=Ezz0CGAWFexqZLoc-1)
+
 ## Flow of The Project
 
 - **Step 1:**- Project Planning and Research
