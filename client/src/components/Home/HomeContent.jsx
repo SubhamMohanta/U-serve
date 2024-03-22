@@ -3,7 +3,6 @@ import img1 from "../../assets/Group1.png"
 import img2 from "../../assets/Group 2.png"
 import img3 from "../../assets/Group 3.png"
 import img4 from "../../assets/Group 4.png"
-
 import { Flex, Heading, Box, Text } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/image'
 import { Button } from '@chakra-ui/react';
