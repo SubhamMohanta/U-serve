@@ -8,6 +8,7 @@ const eventSchema = new mongoose.Schema({
   endDate: { type: Date, required: true },
   organizer: { type: String, required: true },
   attendees: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+  image: { type: String },
 }, { timestamps: true });
 
 const Event = mongoose.model('Event', eventSchema);
