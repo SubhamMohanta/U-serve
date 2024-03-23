@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Lenis from '@studio-freight/lenis'
 import Login from './components/login/Login';
 import About from './components/About/About';
+import Event from './components/Events/Event';
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/confirm' element={<Login />} />
             <Route path='/about' element={<About />} />
+            <Route path='/Explore' element={<Event />} />
           </Routes>
         </BrowserRouter>
         <ParentContext />
