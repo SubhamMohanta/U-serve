@@ -6,7 +6,7 @@ import React from 'react'
 const HeroContent = () => {
     return (
         <Box bg={"#FFFDF1"} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
-            <Flex mt={50} gap={2} alignItems={"center"}>
+            <Flex mt={5} gap={2} alignItems={"center"}>
                 <Text letterSpacing={4} color="#4BB96A" fontSize="12px" fontWeight="700">WELCOME TO U-SERVE</Text>
             </Flex>
             <Heading size="2xl" textAlign="center" color="#363636" lineHeight="60px">Empowering communities <br />to make a difference</Heading>
