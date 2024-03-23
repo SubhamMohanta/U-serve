@@ -5,6 +5,7 @@ import ParentContext from './context/ParentContext';
 import Home from './components/Home/Home';
 import Lenis from '@studio-freight/lenis'
 import Login from './components/login/Login';
+import About from './components/About/About';
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/confirm' element={<Login />} />
+            <Route path='/about' element={<About />} />
           </Routes>
         </BrowserRouter>
         <ParentContext />

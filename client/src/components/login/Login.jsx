@@ -81,7 +81,6 @@ const Login = () => {
                   </Radio>
                 </Stack>
               </RadioGroup>
-
               <Button bg={"#2D5DC7"} textColor={"white"} w={"100%"} onClick={()=>navigate("/")}>Continue</Button>
             </VStack>
           </Box>
