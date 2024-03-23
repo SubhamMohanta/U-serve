@@ -6,13 +6,13 @@ import TopEvents from './TopEvents.jsx'
 // import SubNav from './SubNav.jsx'
 
 const Home = () => {
-  return(
+  return (
     <>
-    <NavBar/>
-    {/* <SubNav tab={"home"}/> */}
-    <HeroContent/>
-    <TopEvents/>
-    <HomeContent/>
+      <NavBar />
+      {/* <SubNav tab={"home"}/> */}
+      <HeroContent />
+      <TopEvents />
+      <HomeContent />
     </>
   )
 }

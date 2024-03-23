@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 import Event1 from "../../assets/Event1.png";
+import Event from "../../assets/Event.png";
+import Event3 from "../../assets/Event3.png";
+import Event4 from "../../assets/Event4.png";
+import Event5 from "../../assets/Event5.png";
 
 const TopEvents = () => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -13,9 +17,8 @@ const TopEvents = () => {
         return () => clearInterval(interval);
     }, []);
 
-    const images = [Event1, Event1, Event1, Event1, Event1]; // Add more images as needed
-    const gapBetweenImages = -100; // Adjust this value to decrease the gap between images
-
+    const images = [Event1, Event, Event3, Event4, Event5];
+    const gapBetweenImages = -100;
     return (
         <Box bg="#FFFEF8">
             <Box
