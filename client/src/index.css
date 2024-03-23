@@ -20,3 +20,19 @@
   border-radius: 8px;
   background-color: #4BB96A;
 }
+
+#google_translate_element {
+  position: fixed;
+  bottom: 1rem;
+  left: 4.5rem;
+  z-index: 1000;
+  background-color: #4BB96A;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+#google_translate_element span{
+  display: none;
+}

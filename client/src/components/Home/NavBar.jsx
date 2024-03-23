@@ -7,7 +7,6 @@ import {
     Text,
     Link,
     Stack,
-    IconButton,
     useDisclosure,
     Avatar
 } from '@chakra-ui/react';
@@ -21,8 +20,6 @@ const navLinks = [
     { name: 'How it Works', path: '/how' },
     { name: 'FAQs', path: 'faqs' }
 ];
-
-
 
 export default function NavBar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
