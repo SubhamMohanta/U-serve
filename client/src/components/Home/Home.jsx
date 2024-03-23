@@ -9,7 +9,7 @@ const Home = () => {
   return(
     <>
     <NavBar/>
-    <SubNav/>
+    <SubNav tab={"home"}/>
     <HeroContent/>
     <TopEvents/>
     <HomeContent/>
