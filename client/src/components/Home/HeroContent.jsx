@@ -1,11 +1,16 @@
 import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import play from "../../assets/Play.png"
-import React from 'react'
+import React, { useEffect } from 'react'
+import 'aos/dist/aos.css'
+import Aos from 'aos';
 // import Bold from '../../assets/SFProDisplay-Bold.ttf'
 
 const HeroContent = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return (
-        <Box bg={"#FFFEF8"} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
+        <Box bg={"#FFFEF8"} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white" data-aos="fade-zoom-in">
             <svg style={{ marginTop: "-16%" }} width="1000" height="600" viewBox="0 0 1231 737" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_66_1118)">
                     <rect x="165" y="165" width="901" height="407" rx="160" fill="#4BB96A" fill-opacity="0.33" />
