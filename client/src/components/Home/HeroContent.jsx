@@ -1,11 +1,18 @@
 import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import play from "../../assets/Play.png"
+import 'aos/dist/aos.css'
+import {motion} from 'framer-motion'
 
 import React from 'react'
+import { useEffect } from 'react'
+import Aos from 'aos'
 
 const HeroContent = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return (
-        <Box bg={"#FFFDF1"} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
+        <Box bg={"#FFFDF1"} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white" data-aos="fade-zoom-in">
             <Flex mt={50} gap={2} alignItems={"center"}>
                 <Text letterSpacing={4} color="#4BB96A" fontSize="12px" fontWeight="700">WELCOME TO U-SERVE</Text>
             </Flex>

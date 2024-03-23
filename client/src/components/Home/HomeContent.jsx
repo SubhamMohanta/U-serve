@@ -6,20 +6,29 @@ import img4 from "../../assets/Group 4.png"
 import { Flex, Heading, Box, Text } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/image'
 import { Button } from '@chakra-ui/react';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
+import Aos from 'aos'
+import { motion } from 'framer-motion'
+
+
 
 const HomeContent = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return (
         <>
             <Box bg="#FFFDF1">
                 <Flex justifyContent={"space-center"} alignItems={"center"}>
                     <Flex align={"between"} justify={"space-between"} m={"15vh 15vw 15vh 10vw"}>
 
-                        <Image src={img1} w={"40%"}></Image>
+                        <Image src={img1} w={"40%"} data-aos="fade-zoom-in"></Image>
 
-                        <Box my={"2%"} textAlign={"end"}>
-                            <Heading fontSize={"48px"}>Volunteer Oppurtunity</Heading>
-                            <Heading fontSize={"48px"}>MarketPlace</Heading>
-                            <Text paddingLeft={"40%"} textAlign={"end"}>
+                        <Box my={"2%"} textAlign={"end"} data-aos="fade-zoom-in">
+                            <Heading fontSize={"48px"} data-aos="fade-zoom-in">Volunteer Oppurtunity</Heading>
+                            <Heading fontSize={"48px"}data-aos="fade-zoom-in">MarketPlace</Heading>
+                            <Text paddingLeft={"40%"} textAlign={"end"} data-aos="fade-zoom-in">
                                 Explore and sign up for college and local volunteer opportunities, tailoring searches by interests, skills, availability, and causes.
                             </Text>
                             <Button bg="transparent"
@@ -34,6 +43,7 @@ const HomeContent = () => {
                                 d={{ base: 'none', md: 'block' }}
                                 px={4}
                                 mt={5}
+                                sca
                             >
                                 Explore →
                             </Button>
@@ -42,7 +52,7 @@ const HomeContent = () => {
                 </Flex>
 
 
-                <Flex justifyContent={"space-center"} alignItems={"center"}>
+                <Flex justifyContent={"space-center"} alignItems={"center"} data-aos="fade-zoom-in" >
                     <Flex align={"between"} justify={"space-between"} m={"15vh 10vw 15vh 15vw"}>
 
                         <Box my={"2%"} textAlign={"start"}>
@@ -73,7 +83,7 @@ const HomeContent = () => {
 
 
 
-                <Flex justifyContent={"space-center"} alignItems={"center"}>
+                <Flex justifyContent={"space-center"} alignItems={"center"} data-aos="fade-zoom-in">
                     <Flex align={"between"} justify={"space-between"} m={"15vh 15vw 15vh 10vw"}>
 
                         <Image src={img3} w={"40%"}></Image>
@@ -104,7 +114,7 @@ const HomeContent = () => {
                 </Flex>
 
 
-                <Flex justifyContent={"space-center"} alignItems={"center"}>
+                <Flex justifyContent={"space-center"} alignItems={"center"} data-aos="fade-zoom-in">
                     <Flex align={"between"} justify={"space-between"} m={"15vh 10vw 15vh 15vw"}>
 
                         <Box my={"2%"} textAlign={"start"}>

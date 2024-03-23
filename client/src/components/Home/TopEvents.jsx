@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 import Event1 from "../../assets/Event1.png";
+import 'aos/dist/aos.css'
+import Aos from 'aos';
 
 const TopEvents = () => {
+
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
     useEffect(() => {
+        Aos.init({duration:2000})
         const interval = setInterval(() => {
             setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, 2000);
@@ -17,7 +21,7 @@ const TopEvents = () => {
     const gapBetweenImages = -100; // Adjust this value to decrease the gap between images
 
     return (
-        <Box bg="#FFFDF1">
+        <Box bg="#FFFDF1" data-aos="fade-zoom-in">
             <Box
                 bg="#FFFDF1"
                 display="flex"

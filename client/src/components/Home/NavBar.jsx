@@ -1,4 +1,5 @@
 import Headroom from 'react-headroom';
+
 import {
     Box,
     Flex,
@@ -38,7 +39,6 @@ export default function NavBar() {
             <Box px={"10%"} bg={'rgba(255,254,248,1)'} alignItems="center" pt="5" backdropFilter='blur(20px)'>
                 <Flex h={16} alignItems="center" justifyContent="space-between" mx="auto">
                     <img src={logo} width={'159px'} height={'65px'} />
-
                     <HStack spacing={8} alignItems="center">
                         <HStack as="nav" spacing={6} d={{ base: 'none', md: 'flex' }} alignItems="center">
                             {navLinks.map((link, index) => (
@@ -46,9 +46,7 @@ export default function NavBar() {
                             ))}
                         </HStack>
                     </HStack>
-
                     {isAuthenticated ?
-
                         <Box display={"flex"} gap={4} alignItems="center">
                             <Link to={"/profile"}>
                                 <Avatar
