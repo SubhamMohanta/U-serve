@@ -17,14 +17,14 @@ const TopEvents = () => {
     const gapBetweenImages = -100; // Adjust this value to decrease the gap between images
 
     return (
-        <Box bg="#FFFDF1">
+        <Box bg="#FFFEF8">
             <Box
-                bg="#FFFDF1"
+                bg="#FFFEF8"
                 display="flex"
                 overflowX="hidden"
                 maxW="100vw"
                 mx="0"
-                pt="3%"
+                pt="8%"
                 pl="5%"
                 sx={{ '&::-webkit-scrollbar': { display: 'none' } }}
                 position="relative"

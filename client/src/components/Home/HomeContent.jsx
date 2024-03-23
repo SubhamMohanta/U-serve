@@ -10,16 +10,16 @@ import { Button } from '@chakra-ui/react';
 const HomeContent = () => {
     return (
         <>
-            <Box bg="#FFFDF1">
+            <Box pt="8%" bg="#FFFEF8">
                 <Flex justifyContent={"space-center"} alignItems={"center"}>
                     <Flex align={"between"} justify={"space-between"} m={"15vh 15vw 15vh 10vw"}>
 
                         <Image src={img1} w={"40%"}></Image>
 
-                        <Box my={"2%"} textAlign={"end"}>
+                        <Box fontFamily="SF Pro Display" my={"2%"} textAlign={"end"}>
                             <Heading fontSize={"48px"}>Volunteer Oppurtunity</Heading>
                             <Heading fontSize={"48px"}>MarketPlace</Heading>
-                            <Text paddingLeft={"40%"} textAlign={"end"}>
+                            <Text fontFamily="SF Pro Text" color="#363636" fontWeight="500" mt={"3%"} paddingLeft={"40%"} textAlign={"end"}>
                                 Explore and sign up for college and local volunteer opportunities, tailoring searches by interests, skills, availability, and causes.
                             </Text>
                             <Button bg="transparent"
@@ -45,10 +45,10 @@ const HomeContent = () => {
                 <Flex justifyContent={"space-center"} alignItems={"center"}>
                     <Flex align={"between"} justify={"space-between"} m={"15vh 10vw 15vh 15vw"}>
 
-                        <Box my={"2%"} textAlign={"start"}>
+                        <Box fontFamily="SF Pro Display" my={"2%"} textAlign={"start"}>
                             <Heading fontSize={"48px"}>Community Events</Heading>
                             <Heading fontSize={"48px"}>and Projects</Heading>
-                            <Text paddingRight={"40%"} mt={"2%"} textAlign={"start"}>
+                            <Text fontFamily="SF Pro Text" color="#363636" fontWeight="500" paddingRight={"40%"} mt={"3%"} textAlign={"start"}>
                                 Explore a calendar of community events, service projects and workshops.
                             </Text>
                             <Button bg="transparent"
@@ -78,10 +78,10 @@ const HomeContent = () => {
 
                         <Image src={img3} w={"40%"}></Image>
 
-                        <Box my={"2%"} textAlign={"end"}>
+                        <Box fontFamily="SF Pro Display" my={"2%"} textAlign={"end"}>
                             <Heading fontSize={"48px"}>Volunteer Recognition</Heading>
                             <Heading fontSize={"48px"}>and Rewards</Heading>
-                            <Text paddingLeft={"40%"} mt={"2%"} textAlign={"end"}>
+                            <Text fontFamily="SF Pro Text" color="#363636" fontWeight="500" paddingLeft={"40%"} mt={"3%"} textAlign={"end"}>
                                 Earn virtual badges and certificates for showcasing volunteer experience.
                             </Text>
                         </Box>
@@ -92,10 +92,10 @@ const HomeContent = () => {
                 <Flex justifyContent={"space-center"} alignItems={"center"}>
                     <Flex align={"between"} justify={"space-between"} m={"15vh 10vw 15vh 15vw"}>
 
-                        <Box my={"2%"} textAlign={"start"}>
+                        <Box fontFamily="SF Pro Display" my={"2%"} textAlign={"start"}>
                             <Heading fontSize={"48px"}>Impact Tracking</Heading>
                             <Heading fontSize={"48px"}>and Reporting</Heading>
-                            <Text paddingRight={"40%"} mt={"2%"} textAlign={"start"}>
+                            <Text fontFamily="SF Pro Text" color="#363636" fontWeight="500" paddingRight={"40%"}  mt={"3%"} textAlign={"start"}>
                                 Monitor the social impact of volunteer activities with reporting dashboards.
                             </Text>
                             <Button bg="transparent"
