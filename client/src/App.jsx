@@ -4,16 +4,13 @@ import { ChakraProvider } from '@chakra-ui/react'
 import ParentContext from './context/ParentContext';
 import Home from './components/Home/Home';
 import Lenis from '@studio-freight/lenis'
+import Login from './components/login/Login';
 
 
 
 function App() {
 
   const lenis = new Lenis()
-
-  lenis.on('scroll', (e) => {
-    console.log(e)
-  })
 
   function raf(time) {
     lenis.raf(time)
@@ -29,6 +26,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/confirm' element={<Login />} />
           </Routes>
         </BrowserRouter>
         <ParentContext />

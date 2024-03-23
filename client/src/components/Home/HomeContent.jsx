@@ -84,21 +84,6 @@ const HomeContent = () => {
                             <Text paddingLeft={"40%"} mt={"2%"} textAlign={"end"}>
                                 Earn virtual badges and certificates for showcasing volunteer experience.
                             </Text>
-                            <Button bg="transparent"
-                                size="md"
-                                color="black"
-                                border="3px solid #4BB96A"
-                                borderRadius="20px"
-                                _hover={{
-                                    bg: "#4BB96A", border: "3px solid #4BB96A", filter: "drop-shadow(0 0 5px #4BB96A)",
-                                    transition: "background-color 0.3s ease", color: "white"
-                                }}
-                                d={{ base: 'none', md: 'block' }}
-                                px={4}
-                                mt={5}
-                            >
-                                Rewards →
-                            </Button>
                         </Box>
                     </Flex>
                 </Flex>
